@@ -10,7 +10,8 @@
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",
-    "build": "gulp"
+    "build": "gulp",
+    "build-css": "npx tailwindcss-cli@latest build  tailwind.config.css -o assets/css/tailwind.css"
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -95,5 +96,10 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
   }
 }

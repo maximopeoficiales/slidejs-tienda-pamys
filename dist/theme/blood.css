@@ -14,14 +14,14 @@
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --background-color: #222;
+  --background-color: #fff;
   --main-font: Ubuntu, sans-serif;
   --main-font-size: 40px;
-  --main-color: #eee;
+  --main-color: rgb(0, 0, 0);
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
   --heading-font: Ubuntu, sans-serif;
-  --heading-color: #eee;
+  --heading-color: var(--main-color);
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
   --heading-text-transform: uppercase;
@@ -44,14 +44,14 @@
 }
 
 .reveal-viewport {
-  background: #222;
-  background-color: #222;
+  background: var(--background-color);
+  background-color: var(--background-color);
 }
 
 .reveal {
   /* font-size: 40px; */
   font-weight: normal;
-  color: #eee;
+  color: var(--main-color);
 }
 
 .reveal ::selection {
@@ -75,21 +75,21 @@
 /*********************************************
  * HEADERS
  *********************************************/
-.reveal h1,
+/* .reveal h1,
 .reveal h2,
 .reveal h3,
 .reveal h4,
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
+  color: var(--main-color);
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #222;
   word-wrap: break-word;
-}
+} */
 
 /* .reveal h1 {
   font-size: 3.77em;
@@ -316,7 +316,7 @@
  * Frame helper
  *********************************************/
 .reveal .r-frame {
-  border: 4px solid #eee;
+  border: 4px solid var(--main-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 

@@ -48,34 +48,109 @@
           </div>
         </section>
         <section>
-          <div class="flex justify-between">
-            <div class="w-1/3">
-              <h1 class="titulo-2xl">01 <b class="color-principal">*</b></h1>
-              <h3 class="p-4 mt-16 font-semibold color-principal titulo-xl">
-                Objetivos
-              </h3>
+          <section>
+            <div class="flex justify-between">
+              <div class="w-1/3">
+                <h1 class="titulo-2xl">01 <b class="color-principal">*</b></h1>
+                <h3 class="p-4 mt-16 font-semibold color-principal titulo-xl">
+                  Objetivos
+                </h3>
+              </div>
+              <div class="w-3/3 h-100">
+                <img
+                  src="assets/images/zapatitos-rosado.jpg"
+                  class="border-gray-100 shadow-lg rounded-2xl img-right-xl"
+                />
+              </div>
             </div>
-            <div class="w-3/3 h-100">
-              <img
-                src="assets/images/zapatitos-rosado.jpg"
-                class="border-gray-100 shadow-lg rounded-2xl img-right-xl"
-              />
+          </section>
+          <section data-background="assets/images/fondo-naranja.png">
+            <div class="flex justify-between">
+              <div class="w-3/4 p-4">
+                <h1 class="text-5xl font-semibold capitalize">
+                  OBJETIVOS DEL PROYECTO <b class="color-principal">*</b>
+                </h1>
+
+                <div class="mt-14">
+                  <h6 class="text-3xl font-semibold text-left">
+                    Resumen Ejecutivo
+                  </h6>
+                  <div class="p-2 text-2xl">
+                    <ul>
+                      <li>
+                        Actualmente la empresa se encuentra ubicada en
+                        Av.revolución con Av. Arriba Perú Galería Sarita Colonia
+                        exterior 2, Villa EL Salvador 1584, cuenta 
+                      </li>
+                      <li>Cuenta con trabajadores multirol</li>
+                      <li>La empresa labora en un marco tradicional</li>
+                      <li>Cuenta con más de 5 años en ventas</li>
+                      <li>Ofrece Servicio courrier</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="w-4/4 h-100">
+                <img
+                  src="assets/images/phone.png"
+                  class="right-0 border-gray-100 shadow-lg rounded-2xl img-right-xl"
+                />
+              </div>
             </div>
-          </div>
+          </section>
+          <section data-background="assets/images/fondo-naranja-invertido.png">
+            <div class="flex justify-between">
+              <div class="w-4/4 h-100">
+                <img
+                  src="assets/images/zapatito-blanco.jpg"
+                  class="right-0 border-gray-100 shadow-lg rounded-2xl img-right-xl"
+                />
+              </div>
+              <div class="w-3/4 p-4">
+                <h1 class="text-5xl font-semibold capitalize">
+                  OBJETIVOS DEL PROYECTO <b class="color-principal">*</b>
+                </h1>
+
+                <div class="flex mt-14">
+                  <div class="p-2 text-2xl">
+                    <ul>
+                      <li>Aumentar las ventas en un 30%.</li>
+                      <li>Lograr una venta sencilla de manera online.</li>
+                      <li>Fidelizar a los clientes</li>
+                      <li>
+                        Llevar a la mayoría de lugares de demanda del producto
+                      </li>
+                      <li>Lograr una venta eficiente , segura y rápida</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
         <section>
-          <section>Slide 3</section>
-          <section>Slide 4</section>
-          <section>Slide 5</section>
-          <section>Slide 6</section>
+          <section data-background="assets/images/fondo-naranja-eje-x.png">
+            <div class="flex flex-col items-center">
+              <h2 class="p-2 text-center text-8xl font-weight-bold">
+                ALCANCE DEL
+                <p class="p-0 my-0 font-weight-bold">PROYECTO</p>
+              </h2>
+              <img
+                class="object-cover p-2 shadow-xl mt-14 rounded-3xl"
+                src="assets/images/gestion-proyecto.png"
+                style="height: 400px; width: 1200px"
+              />
+            </div>
+          </section>
         </section>
       </div>
     </div>
 
     <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <!-- <script src="plugin/notes/notes.js"></script> -->
+    <!-- <script src="plugin/markdown/markdown.js"></script> -->
+    <!-- <script src="plugin/highlight/highlight.js"></script> -->
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
@@ -84,7 +159,8 @@
         hash: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        // plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        plugins: [RevealZoom],
       });
     </script>
   </body>

@@ -2,19 +2,7 @@
 :root {
   --color-principal: #ffb108;
 }
-.img-right-xl {
-  height: 500px;
-  width: 450px;
-}
-@media (min-width: 1140px) {
-  .slides {
-    width: 95% !important;
-  }
-  .img-right-xl {
-    height: 600px;
-    width: 550px;
-  }
-}
+/* generales */
 body {
   /* --heading-font: Ubuntu, sans-serif; */
   /* background-color: #222; */
@@ -24,9 +12,32 @@ body {
 .color-principal {
   color: var(--color-principal);
 }
+/* utilidades */
+
 .titulo-xl {
   font-size: 6rem;
 }
 .titulo-2xl {
   font-size: 12rem;
+}
+
+.img-right-xl {
+  height: 500px;
+  width: 450px;
+}
+li {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+/* cuando sea grande */
+@media (min-width: 1140px) {
+  .slides {
+    width: 95% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-right-xl {
+    height: 600px;
+    width: 550px;
+  }
 }
